@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospedaje - Finca Las Antípodas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="logo"><img src="img/Logo copia.png" alt="Logo Finca Las Antípodas"></div>
+            <nav class="nav">
+                <button class="nav-toggle" id="hamburger" aria-label="Abrir menú">&#9776;</button>
+                <ul class="nav-menu" id="navbar">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="historia.html">Nosotros</a></li>
+                    <li><a href="catalogo-vinos.html">Vinos</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="eventos-marca.html">Eventos</a></li>
+                    <li><a href="ubicacion.html">Ubicación</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="hero">
+            <img src="img/Alojamientos.jpg" alt="Alojamiento en Finca Las Antípodas" class="hero-img">
+            <div class="hero-text" >
+                <h1>Servicio de Hospedaje</h1>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section section-service-detail">
+            <div class="slider-container">
+                <div class="slider">
+                    <img src="img/Hospedaje1.jpg" class="slide" alt="Hospedaje 1">
+                    <img src="img/Hospedaje2.jpg" class="slide" alt="Hospedaje 2">
+                    <img src="img/Hospedaje3.jpg" class="slide" alt="Hospedaje 3">
+                    <img src="img/Hospedaje4.jpg" class="slide" alt="Hospedaje 4">
+                    <img src="img/Hospedaje5.jpg" class="slide" alt="Hospedaje 5">
+                    <img src="img/Hospedaje6.jpg" class="slide" alt="Hospedaje 6">
+                </div>
+                <button class="slider-btn prev" onclick="prevSlide()">❮</button>
+                <button class="slider-btn next" onclick="nextSlide()">❯</button>
+            </div>
+
+            <div class="service-details">
+                <h2>Duerme entre viñas</h2>
+                <p>Ofrecemos una experiencia de alojamiento única dentro del viñedo, en el corazón de la finca. Los espacios están diseñados en containers reacondicionados como cómodos departamentos, con vistas abiertas a las hileras de viñas y al paisaje rural que las rodea.</p>
+                <p>Cada unidad puede hospedar hasta cuatro personas e incluye desayuno artesanal y acceso a una piscina, lo que permite disfrutar del entorno con total confort. Es una propuesta pensada para quienes buscan una verdadera inmersión en la naturaleza y el ritmo de la vida rural, ideal para desconectar, relajarse y reconectar con los sentidos.</p> 
+                <p>El servicio se ofrece únicamente con reserva anticipada, sujeto a disponibilidad y condiciones climáticas.</p>
+                <a href="contacto.html" class="cta-button">Consultar Disponibilidad / Reservar</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Finca Las Antípodas. Todos los derechos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
