@@ -34,3 +34,15 @@ showSlide(currentSlide);
 setInterval(() => {
     window.nextSlide();
 }, 4000);
+
+
+function validarFormulario() {
+    const nombre = document.getElementById('nombre').value;
+    const email = document.getElementById('email').value;
+    
+    if (nombre && email) {
+            document.getElementById('mensaje') .innerText = "Formulario enviado correctamente";
+            return false;
+            }
+        return true;
+}   

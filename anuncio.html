@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anuncio Las Antípodas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    
+    <style>
+
+        .banner {
+            background-image: url(img/Anunciofondo.jpg);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            text-decoration: none;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+            
+        .col-logo, .col-texto, .col-boton {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 5px 20px;
+        }
+
+        .col-logo img {
+            max-height: 70px;
+        }
+
+        .col-texto {
+            flex-direction: column;
+            text-align: left;
+            flex: 1;
+        }
+
+        .col-texto h2, .col-texto p {
+            margin: 1px;
+            font-weight: normal;
+            text-align: center;
+        }
+
+        .col-boton button {
+            background: white;
+            color: #ff6347;
+            border: none;
+            padding: 6px 12px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .banner h2 {
+            font-size: 2em;
+            font-family: "Philosopher", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+        }
+
+        .banner p {
+            font-size: 0.75em;
+            margin: 0.5em;
+            font-family: "DM Sans", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 400;
+                font-style: normal;;
+        }
+
+        .banner button {
+            background: white;
+            color: #831400;
+            border: none;
+            padding: 10px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        @media (min-width: 768px) {
+            .banner {
+                width: 728px;
+                height: 90px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .banner {
+                width: 300px;
+                height: 600px;
+                flex-direction: column;
+                padding: 40px 20px;
+                gap: 25px;
+                text-align: center;
+            }
+            
+            .col-logo img {
+                max-height: 90px;
+            }
+
+            .col-texto h2 {
+                font-size: 2em;
+            }
+
+            .col-texto p {
+                font-size: 1em;
+                margin-top: 0.5em;
+            }
+
+            .col-boton button {
+                font-size: 1.1em;
+                padding: 12px 20px;
+        }
+
+    }
+    </style>
+</head>
+
+<body>
+    <a class="banner" href="https://tienda.com">
+        <div class="col-logo">
+            <img src="img/2Logo copia.png" alt="Logo">
+        </div>
+        <div class="col-texto">
+            <h2>¡Guardate este finde!</h2>
+            <p>Escapate y disfrutá del vino, el descanso y la naturaleza</p>
+        </div>
+        <div class="col-boton">
+            <button>Reservá ahora</button>
+        </div>
+    </a>
+</body>
+
+</html>

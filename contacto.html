@@ -43,24 +43,24 @@
             <section class="ubicacion">
                 <h2>Hablá con Nosotros</h2>
             </section>
-            <p>Ponte en contacto para consultas, reservas o compra de vinos.</p>
+            <p style="text-align: center;"> Ponte en contacto para consultas, reservas o compra de vinos.</p>
 
-            <div class="contact-options">
+            <div class="contact-options" >
                 <div class="contact-option">
                     <h3>WhatsApp</h3>
                     <a href="https://wa.me/+5492364415714" target="_blank" class="cta-button">Enviar Mensaje</a>
-                </div>
-                <div class="contact-option">
                     <h3>Teléfono</h3>
                     <a href="tel:+5492364415714" class="cta-button">Llamar</a>
                 </div>
                 <div class="contact-option">
                     <h3>Newsletter</h3>
                     <p>Suscríbete para recibir novedades, información y promociones exclusivas sobre la Finca y sus eventos.</p>
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="Tu correo electrónico" required>
+                    <form class="newsletter-form" method="post" onsubmit="return validarFormulario()">
+                        <input type="email" id="email" placeholder="Correo electrónico" required>
+                        <input type="name"  id="nombre" placeholder="Nombre y apellido" required>                        
                         <button type="submit" class="cta-button">Suscribirse</button>
                     </form>
+                    <p id="mensaje" style="color:rgb(58, 125, 214); font-weight: bold;"></p>
                 </div>
             </div>
         </section>
