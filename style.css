@@ -6,12 +6,12 @@
     --bg-color: #fff7f7;
     --light-bg-color: #fff0f0;
     --font-primary: "Philosopher", sans-serif;
-        font-weight: 400;
-        font-style: normal;
+    font-weight: 400;
+    font-style: normal;
     --font-secondary: "DM Sans", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 400;
-        font-style: normal;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
     --breakpoint-mobile: 768px;
 }
 
@@ -134,17 +134,17 @@ a:hover {
     position: relative;
     height: 260px;
     overflow: hidden;
-  }
-  
-  .hero-img {
+}
+
+.hero-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     filter: brightness(0.6);
     opacity: 65%;
-  }
-  
-  .hero-text {
+}
+
+.hero-text {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -152,21 +152,21 @@ a:hover {
     text-align: center;
     color: white;
     width: 90%;
-  }
-  
-  .hero-text h1 {
+}
+
+.hero-text h1 {
     font-size: 2.5rem;
     margin: 0;
     line-height: 1.2;
     text-shadow: 2px 2px 5px rgba(70, 70, 70, 0.6);
-  }
-  
-  .hero-text p {
+}
+
+.hero-text p {
     font-size: 1rem;
     margin-top: 1rem;
     text-shadow: 1px 1px 4px rgba(36, 36, 36, 0.4);
     text-align: center;
-  }
+}
 
 .product-title h1 {
     text-align: center;
@@ -200,10 +200,10 @@ a:hover {
 }
 
 .image-content img {
-        width: 100%;
-        height: 275px; 
-        object-fit: cover; 
-        border-radius: 8px;
+    width: 100%;
+    height: 275px;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
 .section-reverse .section-content {
@@ -245,7 +245,9 @@ a:hover {
     margin-bottom: 30px;
 }
 
-.section-history p {text-align: justify;}
+.section-history p {
+    text-align: justify;
+}
 
 .history-items {
     display: grid;
@@ -274,9 +276,13 @@ a:hover {
     margin-bottom: 30px;
 }
 
-.section-catalog p {text-align: center;}
+.section-catalog p {
+    text-align: center;
+}
 
-.section-catalog2 p {text-align: justify;}
+.section-catalog2 p {
+    text-align: justify;
+}
 
 .catalog-items {
     display: grid;
@@ -444,8 +450,7 @@ a:hover {
     flex-direction: column;
 }
 
-.newsletter-form input[type="email"]
-.newsletter-form input[type="text"] {
+.newsletter-form input[type="email"] .newsletter-form input[type="text"] {
     width: 90%;
     max-width: 400px;
     height: 70px;
@@ -470,6 +475,7 @@ a:hover {
 .eventos-marca p {
     text-align: center;
 }
+
 .events-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -650,17 +656,17 @@ a:hover {
 
 @media (min-width: 768px) {
     .hero {
-      height: 400px;
+        height: 400px;
     }
-  
+
     .hero-text h1 {
-      font-size: 3.5rem;
+        font-size: 3.5rem;
     }
-  
+
     .hero-text p {
-      font-size: 1.3rem;
+        font-size: 1.3rem;
     }
-  }
+}
 
 @media (min-width: var(--breakpoint-mobile)) {
     .nav-menu {
@@ -684,16 +690,16 @@ a:hover {
         flex-direction: column;
         gap: 25px;
         grid-template-columns: repeat(3, 1fr);
-        }
     }
+}
 
-    .catalog-items {
-        grid-template-columns: repeat(4, 1fr);
-    }
+.catalog-items {
+    grid-template-columns: repeat(4, 1fr);
+}
 
-    .section-product {
-        flex-direction: row;
-    }
+.section-product {
+    flex-direction: row;
+}
 
 .nav-toggle {
     display: none;
@@ -761,12 +767,12 @@ a:hover {
     .history-items {
         grid-template-columns: 1fr;
         gap: 25px;
-     }
-    
+    }
+
     .catalog-items {
         grid-template-columns: 1fr;
         gap: 25px;
-     }
+    }
 
 }
 
@@ -816,7 +822,7 @@ a:hover {
     right: 10px;
 }
 
-.iframe-container  {
+.iframe-container {
     display: block;
     border: none;
     width: 100%;
@@ -824,18 +830,39 @@ a:hover {
     height: auto;
     margin: 0px auto;
     padding: 0%;
-    }
+}
 
-    @media (min-width: 768px) {
-        .iframe-container {
-            width: 728px;
-            height: 90px;
-        }
+@media (min-width: 768px) {
+    .iframe-container {
+        width: 728px;
+        height: 90px;
     }
+}
 
-    @media (max-width: 767px) {
-        .iframe-container {
-            width: 300px;
-            height: 600px;
-        }
+@media (max-width: 767px) {
+    .iframe-container {
+        width: 300px;
+        height: 600px;
+    }
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.galeria img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.service-link-item a img {
+    max-width: none;
+    width: auto;
+    height: auto;
 }

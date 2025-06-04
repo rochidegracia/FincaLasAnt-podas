@@ -8,9 +8,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="lightbox.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -62,31 +61,46 @@
         
         <div class="catalog-items">
             <div class="catalog-item">
-                <img src="img/LasAntípodas.png" alt="Vino 1">
+                <a href="img/LasAntípodas.png" data-lightbox="catalogo-vinos" title="producto1">
+                    <img src="img/LasAntípodas.png" alt="Vino 1" class="imagen-seccion" 
+                    style="width: 100%; height: auto;">
+                </a>
                 <h3>Las Antípodas</h3>
                 <p>Malbec y Pedir Verdot</p>
                 <div class="cta-button">
                     <a href="producto1.html">Ver Más</a>
                 </div>
             </div>
+
             <div class="catalog-item">
-                <img src="img/Charlatanes.png" alt="Vino 2">
+                <a href="img/Charlatanes.png" data-lightbox="catalogo-vinos" title="producto2">
+                    <img src="img/Charlatanes.png" alt="Vino 2" class="imagen-seccion"
+                    style="width: 100%; height: auto;">
+                </a>
                 <h3>Charlatanes</h3>
                 <p>Blend Merlot y Malbec</p>
                 <div class="cta-button">
                     <a href="producto2.html">Ver Más</a>
                 </div>
             </div>
-             <div class="catalog-item">
-                <img src="img/Insistentes.png" alt="Vino 3">
+
+            <div class="catalog-item">
+                <a href="img/Insistentes.png" data-lightbox="catalogo-vinos" title="producto3">
+                    <img src="img/Insistentes.png" alt="Vino 3" class="imagen-seccion"
+                    style="width: 100%; height: auto;">
+                </a>
                 <h3>Insistentes</h3>
                 <p>Malbec</p>
                 <div class="cta-button">
                     <a href="producto3.html">Ver Más</a>
                 </div>
             </div>
-                <div class="catalog-item">
-                <img src="img/curda.png" alt="Vino 4">
+
+            <div class="catalog-item">
+                <a href="img/curda.png" data-lightbox="catalogo-vinos" title="producto4">
+                    <img src="img/curda.png" alt="Vino 4" class="imagen-seccion"
+                        style="width: 100%; height: auto;">
+                </a>
                 <h3>Curda</h3>
                 <p>Malbec y Cabernet franc</p>
                 <div class="cta-button">
@@ -102,6 +116,8 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="lightbox-plus-jquery.min.js"></script>
+
 </body>
 
 </html>
